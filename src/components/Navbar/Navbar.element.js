@@ -101,9 +101,6 @@ export const NavMenu = styled.ul`
     height:80px;
     padding-left:24px;
     list-style: none;
-    &:hover{
-      border-bottom:2px solid #5FCDE4;
-    }
 
     @media screen and (max-width: 960px) {
       height:0%;
