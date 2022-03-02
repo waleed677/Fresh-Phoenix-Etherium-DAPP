@@ -1,6 +1,6 @@
-# Joking Jungle Cats NFT's Mint Page
+# Fresh Phoenix NFT's Mint Page
 
-![](https://raw.githubusercontent.com/waleed677/Fresh-Phoenix-Etherium-DAPP/master/public/config/images/banner.jpeg)
+![](https://raw.githubusercontent.com/waleed677/Fresh-Phoenix-Etherium-DAPP/master/public/config/images/banner.png)
 
 ## Website Link
 
