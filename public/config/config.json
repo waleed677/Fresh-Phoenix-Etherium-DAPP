@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xf169fdC02b9A4009a8307497E5FCe2999024E0C7",
-  "SCAN_LINK": "https://etherscan.io/address/0xf169fdC02b9A4009a8307497E5FCe2999024E0C7np",
+  "CONTRACT_ADDRESS": "0x6e288a3616e999bf898155f31b61861f0210ed59",
+  "SCAN_LINK": "https://etherscan.io/token/0x6e288a3616e999bf898155f31b61861f0210ed59",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "Fresh Phoenix",
   "SYMBOL": "AVAC",
