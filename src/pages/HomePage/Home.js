@@ -23,7 +23,7 @@ function Home() {
   const [supply , setTotalSupply] = useState(0);
   const [feedback, setFeedback] = useState("");
   const [mintAmount, setMintAmount] = useState(1);
-  const [displayCost, setDisplayCost] = useState(0.07);
+  const [displayCost, setDisplayCost] = useState(0.23);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
@@ -42,6 +42,8 @@ function Home() {
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
+  
+  const MAX_MINT_AMOUNT = 2;
 
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
@@ -89,16 +91,16 @@ function Home() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
+    if (newMintAmount > MAX_MINT_AMOUNT) {
+      newMintAmount = MAX_MINT_AMOUNT;
     }
     setMintAmount(newMintAmount);
     setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * newMintAmount).toFixed(2));
   };
 
   const maxNfts = () => {
-    setMintAmount(10);
-    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * 10).toFixed(2));
+    setMintAmount(MAX_MINT_AMOUNT);
+    setDisplayCost(parseFloat(CONFIG.DISPLAY_COST * MAX_MINT_AMOUNT).toFixed(2));
   };
 
   const getData = async () => {
@@ -220,7 +222,7 @@ function Home() {
           </s.FlexContainer>
           
           <s.TextSubTitle style={{marginTop:"10px"}} size={0.9}  align={"right"} >
-            Max 10
+            Max {MAX_MINT_AMOUNT}
           </s.TextSubTitle>
           <s.SpacerSmall />
           <s.Line />
